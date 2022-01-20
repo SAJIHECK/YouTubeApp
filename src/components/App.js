@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "./Header";
 import SearchBar from "./SearchBar";
 import youtube from "../api/youtube";
-
+import VedioList from "./VedioList";
 
 class App extends React.Component{
     state={Vedios: []};
@@ -23,7 +23,7 @@ render(){
             </div>
             <div>
             <SearchBar onData={this.onSearchSubmit} />
-            I Have {this.state.Vedios.length}  
+           <VedioList vedios={this.state.Vedios} /> 
              </div>
           </div>
         );
