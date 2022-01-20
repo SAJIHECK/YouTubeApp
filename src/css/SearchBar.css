@@ -1,0 +1,18 @@
+#searchbar {
+    width: 1000px;
+    background-color: rgb(194, 196, 197);
+  
+}
+
+#search_bar{
+    padding-top: 5px;
+    padding-left:150px;
+    padding-right: 150px;
+}
+
+#headerStyle{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
