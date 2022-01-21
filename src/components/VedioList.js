@@ -1,10 +1,10 @@
 import React from "react";
 import VedioItem from "./VedioItem";
 
-const VedioList=({vedios}) =>{
+const VedioList=({vedios,onVedioSelect}) =>{
 
     const renderList=vedios.map((vedio)=>{
-    return < VedioItem vedio={vedio} />
+    return < VedioItem onVedioSelect={onVedioSelect} vedio={vedio} />
     });
 
 

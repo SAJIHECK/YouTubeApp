@@ -1,9 +1,9 @@
-import './VedioItems.css';
+import '../css/VedioItems.css';
 import React from "react";
 
-const VedioItem=({vedio})=>{
+const VedioItem=({vedio,onVedioSelect})=>{
     return (
-        <div className="vedio-item item">
+        <div onClick={()=>onVedioSelect(vedio)} className="vedio-item item">
             <img className="ui image"  src={vedio.snippet.thumbnails.medium.url}/>
               <div className="content">
                 <div className="header">{vedio.snippet.title}</div>
