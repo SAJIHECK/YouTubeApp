@@ -4,7 +4,9 @@ import VedioItem from "./VedioItem";
 const VedioList=({vedios,onVedioSelect}) =>{
 
     const renderList=vedios.map((vedio)=>{
-    return < VedioItem onVedioSelect={onVedioSelect} vedio={vedio} />
+    return (
+    < VedioItem key={vedio.id.videoId} onVedioSelect={onVedioSelect} vedio={vedio} />
+    );
     });
 
 

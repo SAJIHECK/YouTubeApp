@@ -23,15 +23,20 @@ class App extends React.Component{
 
 render(){
     return (
-        <div>
-            <div>
-            <Header/>
-            </div>
-            <div>
+        <div className="ui container">
+            <br/>
             <SearchBar onData={this.onSearchSubmit} />
+            <br/>
+            <div className="ui grid">
+            <div className="ui row">
+              <div className="eleven wide column">  
             <VedioDetail vedio={this.state.selectedVedio}/>
+            </div>
+            <div className="five wide column">
            <VedioList onVedioSelect={this.onVedioSelect} vedios={this.state.Vedios} /> 
-             </div>
+           </div>
+           </div>
+           </div>
           </div>
         );
 }
